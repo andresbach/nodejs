@@ -23,7 +23,7 @@ mongoose.connect(url, {
 })
 
 
-// require('./config/passport')(passport);
+require('./config/passport')(passport);
 // settings (creo keys que representen tanto configuraciones como ubicaciones de archivos)
 // Pruebo si el sistema operativo tiene un puerto establecido, de lo contrario, usa el 3000
 app.set('port', process.env.PORT || 3000 );
